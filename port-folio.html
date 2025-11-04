@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="port.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif, Arial;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .row {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+
+        body {
+            margin: 0px !important;
+        }
+
+        h1 {
+            margin: 0px !important;
+        }
+
+        .head {
+            width: 100%;
+            padding: 12px 0px;
+            margin: auto;
+            background-color:black;
+
+            .wrapper {
+                width: 100%;
+                margin: auto;
+                padding: 10px 0px;
+            }
+
+            .name {
+                text-align: center;
+                color:red;
+                font-weight: bolder;
+            }
+
+            .hov {
+                transition: 0.5s all ease;
+
+            }
+
+             .hov:hover {
+                color:blue;
+
+            }
+
+            ol, ul {
+               margin: 0 !important;
+
+            }
+
+            .inner-2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0px;
+                z-index: 1 !important;
+            }
+
+             .list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32%;
+                border: 1px solid white;
+                padding: 4px 2px;
+                position: fixed;
+                border-radius: 22px;
+                background-color: rgb(154, 148, 148);
+                color: white;
+                margin: 0 !important;
+
+            }
+
+            .list ul li {
+                display: inline-block;
+                align-items: center;
+                padding: 0px 12px;
+                color:white;
+                font-size: 14px;
+                transition: 0.5s all ease;
+                font-weight: normal;
+                text-align: center;
+                font-size: 18px;
+                margin: 0px !important;
+            }
+
+            .list ul li:hover {
+                color: #f5921a;
+            }
+
+            .inner-3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inner-3 button {
+                padding: 10px 50px;
+                background-image:linear-gradient(240deg, blue, red);
+                color: white;
+                border-radius: 8px;
+                border: none;
+                transition: 0.5s all ease;
+            }
+
+            .inner-3 button:hover {
+                background-image:linear-gradient(0deg, blue, red);
+
+            }
+        }
+
+        /* header end */
+
+        /* main sec */
+
+        .panel {
+            width: 100%;
+            padding: 100px 0px;
+            background-image: url(black.logo.jpg);
+            background-size: cover;
+            background-position: top center;
+            margin: auto;
+        }
+
+        .panelwrapper {
+            width: 90%;
+            gap: 40px;
+        }
+
+    
+        
+
+        .pan-2 {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+
+        .logo {
+            width:350px;
+            height: 380px;
+            background-image: url(logo.jpg);
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            box-shadow:1px 1px 14px 0px white;
+            transition: all 0.4s ease;
+            border-radius: 8px;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+
+        }
+
+        .in-pan-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .in-pan-1 h1 {
+            color: red;
+            font-weight: bolder;
+        }
+
+        .pan-1 {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-right: 20px;
+            gap: 100px;
+        }
+
+        #para {
+            color: white;
+        }
+            .btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+           }
+
+            .cont {
+            padding: 10px 30px;
+            border: 1px solid red;
+            background: transparent;
+            color:white;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+
+           }
+
+           .cont:hover {
+            background-color: red;
+            border:none;
+           }
+
+           .hir {
+            padding: 10px 30px;
+            background-color: red;
+            color: white;
+            border-radius: 6px;
+            border: none;
+            transition: all 0.2s ease;
+
+           }
+
+           .hir:hover {
+            background: transparent;
+            border: 1px solid red;
+           }
+    
+           .divide {
+            display: flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+            flex-direction: column;
+           }
+
+           .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+           }
+
+           .icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+           }
+
+           .socials a {
+            font-size: 20px;
+            border: 1px solid red;
+            color: white;
+            text-decoration: none !important;
+            transition: all 0.2s ease;
+           }
+
+           .socials a:hover {
+            transform: scale(1.1);
+            color: red;
+            border: 1px solid white;
+           }
+
+        
+
+           /* about section */
+
+           .about-main, .about-main-2{
+            width: 100%;
+            background-color:white;
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat;
+            margin:auto;
+            padding: 40px 0px;
+           }
+
+           .about-wrapper, .about-wrapper-2{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+           }
+           
+           .about-heading {
+            text-align: center;
+            padding: 20px 0px;
+            color:#e410b2;
+            text-shadow: 0px 0px 2px white;
+            text-decoration: underline;
+            font-weight: bolder;
+            font-size: 22px;
+           }
+
+           .about-1{
+            width: 70%;
+            background-color:black;
+            padding: 40px;
+            border-top-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 42px;
+            border-top-right-radius: 42px;
+            box-shadow:rgba(0, 0, 0, 0.3) 0px 15px 30px;
+            
+           }
+
+           .about-jem {
+             width: 100%;
+            background-color:black;
+            padding: 40px;
+            border-top-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 42px;
+            border-top-right-radius: 42px;
+            box-shadow:rgba(0, 0, 0, 0.3) 0px 15px 30px;
+            border: 1px solid yellow;
+           }
+
+           
+
+           .about-inner-1 h1 {
+            font-size: 40px;
+            color:white;
+            padding-bottom: 10px;
+           }
+
+           .about-inner-1 p {
+            font-size: 18px;
+            color: gray;
+           }
+
+           .about-inner-2 {
+            padding: 100px 0px;
+            background-image: url(themelogo.jpg);
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+           }
+
+           .about-img {
+            padding-right: 40px;
+           }
+
+           .theme-1 img {
+            border-top-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 42px;
+            border-top-right-radius: 42px;
+            height: 400px;
+            width: 350px;
+
+           }
+
+            .g-heading h1 {
+            font-size: 20px;
+            text-decoration: underline;
+           }
+
+           .about-g {
+            width: 100%;
+            padding: 40px 0px;
+           }
+
+           .about-g-in-1 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+           }
+
+           .about-g-g {
+            width: 90%;
+            padding: 40px;
+            background-color: black;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius:44px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 44px;
+           }
+
+           .about-g-g h1 {
+            color: white;
+            padding-bottom: 10px;
+           }
+
+           .about-g-g p {
+            font-size: 18px;
+            color:plum;
+           }
+
+           .about-g-bg {
+            padding: 100px 0px;
+            background-image: url(themelogo.jpg);
+            background-size: contain;
+            background-position: right;
+            background-repeat: no-repeat;
+           }
+
+           /* .about-g-sec {
+           } */
+           
+           .about-g-theme img {
+            width: 77%;
+            height: 390px;
+            border-top-left-radius: 44px;
+            border-bottom-left-radius:20px;
+            border-bottom-right-radius: 44px;
+            border-top-right-radius: 20px;
+           }
+
+           .g-heading {
+            padding: 40px ;
+            text-align: center;
+           }
+
+           .g-heading h1 {
+            font-size: 42px;
+            color: red;
+            font-weight: bolder;
+           }
+
+           .about-g-sec2 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+           }
+
+           .about-g-theme2 {
+            display: flex;
+            justify-content: flex-end;
+           }
+
+           .about-g-theme2 img {
+            width: 84%;
+            height: 390px;
+            display: flex;
+            justify-content: flex-end;
+            border-top-left-radius: 44px;
+            border-bottom-left-radius:20px;
+            border-bottom-right-radius: 44px;
+            border-top-right-radius: 20px;
+           }
+
+            .about-g-in-2 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+           }
+
+           
+
+           .padding {
+            padding-top:40px;
+           }
+
+           /* skill sec */
+          
+           .skil {
+            width: 100%;
+            background-image: url(black.logo.jpg2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 80px 0px;
+           }
+
+           .skil-head {
+                text-align: center;
+                color: white;
+                text-decoration: underline;
+                padding: 10px 0px;
+           }
+
+           
+
+           .skil-mi1, .skil-mi3 {
+            display: flex;
+            justify-content: flex-end;
+           }
+
+           .skil-inp1, .skil-inp2, .skil-inp3, .skil-inp4 {
+            width: 80%;
+           }
+
+            .skil-inp1 h4, .skil-inp2 h4, .skil-inp3 h4, .skil-inp4 h4 {
+                color:white;
+           }
+
+
+          .inp::-webkit-slider-thumb{
+            color: yellow;
+           }
+
+           /* projects */
+
+           .proj {
+            width: 100%;
+            background-image: url(black.logo.jpg);
+            padding: 100px 0px;
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+           }
+
+           .proj-head {
+            text-align: center;
+            color: white;
+            padding-bottom: 60px;
+            text-decoration: underline;
+           }
+
+           .proj-1-inner {
+            width: 100%;
+           }
+
+           .pr-1-in-1 {
+            padding: 120px 0px;
+            background-image: url(download.tic.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+           }
+
+           .proj-2-inner {
+            width: 100%;
+           }
+
+           .pr-2-in-2 {
+            padding: 120px 0px;
+            background-image: url(papergame.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:top center;
+           }
+
+
+           .proj-1 {
+            display: flex;
+            justify-content: flex-end;
+           }
+
+           .proj-1-inner {
+            width: 80%;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: -2px 2px 100px white;
+            transition: all 0.4s ease;
+           }
+
+           .proj-1-inner:hover {
+            transform:translateY(-12px);
+           }
+
+           .proj-2-inner {
+            width:80% ;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: -2px 2px 100px white;
+            transition: all 0.4s ease;
+           }
+
+           .proj-2-inner:hover {
+            transform:translateY(-12px);
+           }
+
+           .pr-1-info {
+            background: linear-gradient(145deg, #111b1b, #1d3636);
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 6px;
+           }
+
+
+           .pr-2-info {
+            background: linear-gradient(145deg, #111b1b, #1d3636);
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 6px;
+           }
+
+           .experties {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           }
+
+           .zoom {
+            padding: 2px 6px;
+            border: none;
+            border-radius: 4px;
+            background-color: #444325;
+            color: #f5921a;
+           }
+        
+           .live {
+            display: flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+            gap: 6px;
+            color: #f5921a;
+            padding: 6px 0px;
+           }
+
+           .demo {
+            color: #f5921a;
+            font-size: 1.7rem;
+           }
+
+           /* contacact */
+
+           .touch {
+            width: 100%;
+            padding: 100px 0px;
+            background-image: url(black.logo.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+
+           .touch-head {
+            text-align: center;
+            color: white;
+            padding-bottom: 40px;
+           }
+
+
+           .touch-1 {
+            display: flex;
+            justify-content: flex-end;
+           }
+
+           .touch-inner-1 {
+            width: 84%;
+            padding: 40px 40px 258px 40px;
+            background: linear-gradient(145deg, #111b1b, #1d3636);
+            border-radius: 15px;
+           }
+
+           .t-i-1 {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 10px;
+            padding-bottom: 10px;
+           }
+
+           .t-i-1 h2 {
+            color: white;
+            font-weight: bolder;
+           }
+
+           .t-i-1 p {
+            color: #d1d1d1;
+            font-size: 16px;
+           }
+
+           .t-i-2 {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 0px;
+           }
+
+           .i-2 {
+            display: flex;
+            gap: 12px;
+            padding-top: 10px;
+           }
+
+           .hedge {
+            font-size: 20px;
+            color: #f59e0b;
+           }
+
+           .i-2 p {
+            font-size: 16px;
+            color: #d1d1d1;
+           }
+
+           .t-i-3 {
+            padding-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+           }
+
+           .icon1 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #2e3f3f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            transition: all 0.3s ease ;
+           }
+
+           .icon1:hover {
+            transform: translateY(-4px);
+            background-color: #f5921a;
+            color: white;
+           }
+
+           .touch-inner-2 {
+            width: 90%;
+            background: linear-gradient(145deg, #111b1b, #1d3636);
+            padding: 40px;
+            border-radius: 15px;
+           }
+
+           .s-i-1 {
+            padding-bottom: 20px;
+            color: white;
+            font-weight: bolder;
+           }
+
+           .s-i-2  {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 30px;
+           }
+
+           .s-inp input{
+            width: 100%;
+            padding: 14px;
+            background-color: #2b3737;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #d1d1d1;
+            transition: all ease 0.3s;
+           }
+
+
+           .s-inp2 input {
+            width: 100%;
+            padding:14px 14px 100px 14px;
+            border: none;
+            background-color:#2b3737;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #d1d1d1;
+
+           }
+
+
+           .s-inp::placeholder {
+            padding-left:10px;
+            color: #d1d1d1;
+           }
+
+           .s-i-3 {
+            padding-top: 30px;
+           }
+
+           .s-i-3 button {
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            color: black;
+            font-weight: bolder;
+            background-color: #f5921a;
+            border: none;
+            cursor: pointer;
+           }
+
+        /* responsiveness mobile */
+
+        @media (Max-Width:767px) {
+            .row {
+                padding: 10px;
+            }
+
+            .inner-3 button {
+                height: 30px ;
+                width: 40px;
+                font-size: 8px;
+                text-align: center;
+            }
+
+            .hov {
+                font-size: 20px;
+            }
+
+            ul li {
+                font-size: 4px;
+            }
+
+
+            
+            .pan-1 {
+                width: 100% !important;
+            }
+
+            .pan-2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        
+
+            #web {
+                font-size: 16px;
+            }
+
+            #para {
+                font-size: 12px;
+            }
+
+
+           
+
+           .btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+           }
+
+            .cont {
+            padding: 4px 10px;
+            border: 1px solid red;
+            background: transparent;
+            color:white;
+            border-radius: 6px;
+           }
+
+           .hir {
+            padding: 4px 10px;
+            background-color: red;
+            color: white;
+            border-radius: 6px;
+            border: none;
+           }
+
+           .socials {
+            width: 100%;
+            padding-bottom: 80px;
+           }
+
+            .about-g-in-1 h1 {
+            font-size: 16px;
+            color:white;
+            padding-bottom: 10px;
+           }
+
+           .about-g-in-1 p {
+            font-size: 12px;
+            color: gray;
+           }
+
+             .about-g-in h1 {
+            font-size: 16px;
+            color:white;
+            padding-bottom: 10px;
+           }
+
+           .about-g-in p {
+            font-size: 12px;
+            color: gray;
+           }
+
+           .about-g-in-1, .about-g-in-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+
+           .about-g-sec, .about-g-sec2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+           }
+
+           .about-g-theme img, .about-g-theme2 img {
+            width: 100%;
+           }
+
+           .padding {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+           }
+
+           .about-g-g {
+            width: 100%;
+           }
+
+           .about-g {
+            padding: 0px 10px;
+           }
+
+
+           .g-heading h1 {
+            font-size: 20px;
+            text-decoration: underline;
+           }
+
+           .skil-head h1 {
+            font-size: 20px;
+           }
+
+           .skil-mi1, .skil-mi3 {
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+            }
+
+            .proj-1 {
+                padding-bottom: 40px;
+            }
+
+            .proj-head h1 {
+                font-size: 30px;
+            }
+
+            .proj-1-inner, .proj-2-inner {
+                width: 100%;
+            }
+
+            .pr-2-info h2, .pr-1-info h2 {
+                font-size: 18px;
+        }
+
+            .pr-2-info p, .pr-1-info p {
+                font-size: 16px;
+        }
+
+        .experties {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .zoom {
+            padding: 1px 3px;
+        }
+
+        .list {
+            position:absolute !important;
+        }
+
+    }
+           
+    </style>
+</head>
+<body>
+    <header>
+    <div class="head">
+        <div class="wrapper row">
+                <div class="inner-2 col-md-12 col-xs-12">
+                    <div class="list">
+                        <ul>
+                            <li>Home</li>
+                            <li>Menu</li>
+                            <a href="#about"><li>About me</li></a>
+                           <a href="#skill"><li>Skiils</li></a>
+                            <a href="#project"><li>Projects</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="panel">
+            <div class="panelwrapper">
+                <div class="row">
+                    <div class="gap col-md-2"></div>
+                <div class="pan-1 col-md-5 col-xs-12">
+                    <div class="divide">
+                    <div class="in-pan-1">
+                    <h1 id="web">Web Developer</h1>
+                    <p id="para">"Be not afraid of growing slowly; be afraid
+                        only of standing still."—Chinese Proverb.
+                        "Change and growth take place when a person has
+                        risked himself and dares to become involved with 
+                        experimenting with his own life."—Herbert Otto.09-Jun-2025</p>
+                    </div>
+                    <div class="btns">
+                        <button class="cont">Contact Me</button>
+                        <button class="hir">Hire Me !</button>
+                    </div>
+                </div>
+                <div class="socials">
+                    <a href="https://www.instagram.com/abbas_zaiidi/?hl=en" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/facbook.comlink" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@AbbasZaidi999" class="icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                </div>
+                <div class="pan-2 col-md-5 col-xs-12">
+                    <div class="logo">
+                        <!-- image logo -->
+                    </div>
+                </div>
+                <div class="gap col-md-"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+     <div class="skil" id="skill">
+                <div class="row">
+                    <div class="skil-head col-md-12 col-xs-12">
+                        <h1>My Skills</h1>
+                    </div>
+                </div>
+                <div class="row" style="padding-top: 40px;">
+                    <div class="skil-mi1 col-md-6 col-xs-12">
+                        <div class="skil-inp1">
+                            <h4>HTML5</h4>
+                            <input type="range" value="94" class="inp">
+                        </div>
+                    </div>
+                     <div class="skil-mi2 col-md-6 col-xs-12">
+                        <div class="skil-inp2">
+                            <h4>CSS3</h4>
+                            <input type="range" value="88" class="inp">
+                        </div>
+                    </div>
+                </div>
+                     <div class="row" style="padding-top: 30px;">
+                    <div class="skil-mi3 col-md-6 col-xs-12">
+                        <div class="skil-inp3">
+                            <h4>Bootstrap</h4>
+                            <input type="range" value="90" class="inp">
+                        </div>
+                    </div>
+                     <div class="skil-mi4 col-md-6 col-xs-12">
+                        <div class="skil-inp4">
+                            <h4>JavaScript</h4>
+                            <input type="range" value="70" class="inp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- projects -->
+                <div class="proj" id="project">
+                    <div class="row">
+                        <div class="proj-head col-md-12 col-xs-12">
+                            <h1>My Projects</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="proj-1 col-md-6 col-xs-12">
+                            <div class="proj-1-inner">
+                                <div class="pr-1-in-1">
+                                    <!-- img -->
+                                </div>
+                                <div class="pr-1-info">
+                                    <h2 style="color: white;">Tic-Tac-Toe Game</h2>
+                                    <p style="color: #d1d1d1;">I have designed and developed tHe Tic-Tac-Toe Game
+                                        using HTML, CSS and JavaScript The structure is
+                                        built with HTML, styled with CSS for
+                                        a visually appealing layout.</p>
+                                        <div class="experties">
+                                            <button class="zoom">HTML5</button>
+                                            <button class="zoom">CSS3</button>
+                                            <button class="zoom">JavaScript</button>
+                                        </div>
+                                        <div class="live">
+                                            <a href="tik-tak.html" class="demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                           <a href="tik-tak.html"> <p class="demo">Live Demo</p></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proj-2 col-md-6 col-xs-12">
+                            <div class="proj-2-inner">
+                                <div class="pr-2-in-2">
+                                    <!-- img -->
+                                </div>
+                                <div class="pr-2-info">
+                                    <h2 style="color: white;">Rock Paper Scissor</h2>
+                                      <p style="color: #d1d1d1;">I have designed and developed the Rock Paper Scissor Game
+                                        using HTML, CSS and JavaScript The structure is
+                                        built with HTML, styled with CSS for
+                                        a visually appealing layout.</p>
+                                        <div class="experties">
+                                            <button class="zoom">HTML5</button>
+                                            <button class="zoom">CSS3</button>
+                                            <button class="zoom">JavaScript</button>
+                                        </div>
+                                        <div class="live">
+                                            <a href="rock-paper-scissor.html" class="demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                           <a href="rock-paper-scissor.html"><p class="demo">Live Demo</p></a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- projects -end -->
+            <div class="about-g">
+                <div class="row">
+                    <div class="g-heading">
+                        <h1 id="about">About me</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="padding">
+                    <div class="about-g-in-1 col-md-8 col-xs-12">
+                        <div class="about-g-g">
+                            <div class="about-g-in">
+                                <h1>Currently, Iam Learning Java Script</h1>
+                                <p>Currently, I am learning Java Script from
+                                     a Youtube Channel called Apna College. 
+                                     It has been really helpful in clearing my
+                                      concepts about Java Script</p>
+                            </div>
+                            <div class="about-g-bg">
+                                <!-- bg -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-g-sec col-md-4 col-xs-12">
+                        <div class="about-g-theme">
+                            <img src="themelogo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row" style="padding-bottom: 40px;">
+                    <div class="padding">
+                      <div class="about-g-sec2 col-md-4 col-xs-12">
+                        <div class="about-g-theme2">
+                            <img src="themelogo.jpg" alt="">
+                        </div>
+                    </div>
+                      <div class="about-g-in-2 col-md-8 col-xs-12">
+                        <div class="about-g-g">
+                            <div class="about-g-in">
+                                <h1>Currently, Iam learning in IBA Khairpur</h1>
+                                <p>Currently, I am learning in IBA Institute of Khairpur Mirs Campus
+                                     It has been really helpful in clearing my
+                                      concepts about Web Development</p>
+                            </div>
+                            <div class="about-g-bg">
+                                <!-- bg -->
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="touch">
+                <div class="row">
+                    <div class="touch-head">
+                        <h1>Get In Touch</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="touch-1 col-md-5 col-xs-12">
+                        <div class="touch-inner-1">
+                            <div class="t-i-1">
+                                <h2>Contact Information</h2>
+                                <p>Feel free to reach out to me for collaboration,
+                                    or just to say hello!</p>
+                            </div>
+                            <div class="t-i-2">
+                                <div class="i-2">
+                                    <a href="" class="hedge"><i class="fa-solid fa-envelope"></i></a>
+                                    <p>22ghulamabbas1@gmail.com</p>
+                                </div>
+                                <div class="i-2">
+                                    <a href="" class="hedge"><i class="fa-solid fa-phone"></i></a>
+                                    <p>+92 312 3556082</p>
+                                </div>
+                                <div class="i-2">
+                                    <a href="" class="hedge"><i class="fa-solid fa-location-dot"></i></a>
+                                    <p>Lahore, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="t-i-3">
+                                <a href="https://www.instagram.com/abbas_zaiidi/?hl=en" class="icon1"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/facbook.comlink" class="icon1"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.youtube.com/@AbbasZaidi999" class="icon1"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="" class="icon1"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="touch-2 col-md-7 col-xs-12">
+                        <div class="touch-inner-2">
+                            <div class="s-i-1">
+                                <h2>Send me a Messege</h2>
+                            </div>
+                            <div class="s-i-2">
+                                <div class="s-inp">
+                                    <input type="text" name="" id="name" placeholder="Your Name">
+                                </div>
+                                <div class="s-inp">
+                                    <input type="email" name="" id="" placeholder="Your Email">
+                                </div>
+                                <div class="s-inp">
+                                    <input type="text" name="" id="" placeholder="Subject">
+                                </div>
+                                <div class="s-inp2">
+                                    <input type="email" id="" placeholder="Your Messege" class="msg">
+                                </div>
+                            </div>
+                            <div class="s-i-3">
+                                <button>Send Messege</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script>
+    let logo = document.querySelector(".logo");
+    let change = document.querySelector("#web");
+    let changi = document.querySelector("#para")
+    let theme = document.querySelector(".theme-1")
+    let about = document.querySelector(".about-1")
+
+
+    about.addEventListener("mouseove", () => {
+        theme.classList.remove("hide");
+    })
+    
+
+    </script>
+    
+</body>
+</html>
